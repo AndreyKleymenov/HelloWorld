@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4A-0z-bUN">
-                                <rect key="frame" x="82" y="706" width="250" height="50"/>
+                                <rect key="frame" x="82" y="684" width="250" height="50"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="g0E-pj-pNu"/>
@@ -34,6 +34,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Show Text">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mbh-PF-K9d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -43,9 +46,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u4A-0z-bUN" secondAttribute="bottom" constant="106" id="NGH-Em-gJy"/>
                             <constraint firstItem="u4A-0z-bUN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tu9-Cy-k1f"/>
                             <constraint firstItem="6ym-aT-QlY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VS9-E2-kfJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u4A-0z-bUN" secondAttribute="bottom" constant="128" id="jNG-dv-kc6"/>
+                            <constraint firstItem="6ym-aT-QlY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jzr-JZ-D5V"/>
                             <constraint firstItem="6ym-aT-QlY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="kzw-ht-Z2D"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="6ym-aT-QlY" id="0H7-0r-X6a"/>
+                        <outlet property="toggleButton" destination="u4A-0z-bUN" id="lmc-Pz-6XG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
